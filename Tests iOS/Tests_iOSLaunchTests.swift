@@ -9,16 +9,13 @@ import XCTest
 
 class Tests_iOSLaunchTests: XCTestCase {
 
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
-    }
-
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
 
     func testLaunch() throws {
         let app = XCUIApplication()
+        setupSnapshot(app)
         app.launch()
 
         // Insert steps here to perform after app launch but before taking a screenshot,
@@ -28,5 +25,7 @@ class Tests_iOSLaunchTests: XCTestCase {
         attachment.name = "Launch Screen"
         attachment.lifetime = .keepAlways
         add(attachment)
+        
+        snapshot("0Launch")
     }
 }

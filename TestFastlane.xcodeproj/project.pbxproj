@@ -17,6 +17,7 @@
 		86669E692874465C00D4E483 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86669E3F2874465B00D4E483 /* ContentView.swift */; };
 		86669E6A2874465C00D4E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86669E402874465C00D4E483 /* Assets.xcassets */; };
 		86669E6B2874465C00D4E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86669E402874465C00D4E483 /* Assets.xcassets */; };
+		86669E7D2874546B00D4E483 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86669E7C2874546B00D4E483 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		86669E5E2874465C00D4E483 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86669E622874465C00D4E483 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		86669E642874465C00D4E483 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		86669E7C2874546B00D4E483 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		86669E552874465C00D4E483 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
+				86669E7C2874546B00D4E483 /* SnapshotHelper.swift */,
 				86669E562874465C00D4E483 /* Tests_iOS.swift */,
 				86669E582874465C00D4E483 /* Tests_iOSLaunchTests.swift */,
 			);
@@ -319,6 +322,7 @@
 			files = (
 				86669E592874465C00D4E483 /* Tests_iOSLaunchTests.swift in Sources */,
 				86669E572874465C00D4E483 /* Tests_iOS.swift in Sources */,
+				86669E7D2874546B00D4E483 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
